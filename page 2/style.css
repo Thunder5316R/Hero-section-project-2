@@ -1,15 +1,22 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .container{
-    background-image: url(background.png);
-    background-size: 100% 100vh;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.whole{
+    background: rgba(0, 0, 0, .7);
     height: 100vh;
 }
 .logo{
     height: auto;
     width: 40px;
-    margin-left: 100px;
+    margin-left: 10%;
     margin-top: 20px;
 }
 .menu-bar{
@@ -17,7 +24,6 @@
     position: relative;
 }
 ul{
-    display: inline-block;
     position: absolute;
     top: 30px;
     left: -450px;
@@ -35,28 +41,37 @@ li{
     width: 20px;
     position: absolute;
     top: 28px;
-    left: -100px;
+    left: -150px;
 }
 .body{
     position: relative;
     height: 500px;
 }
 .content{
+    width: 40%;
+    text-align: justify;
     color: #fff;
     float: left;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 10%;
+}
+.content p{
+    margin: 8px 0;
 }
 .image{
     float: right;
-    position: relative;
-    top: 30%;
-    right: 0%;
+    position: absolute;
+    top: 9%;
+    right: 10%;
+    width: 385px;
+}
+.image img{
+    margin: 10px;
 }
 .pic{
     width: 170px;
-    height: 220px;
+    height: 210px;
     border-radius: 20px;
 }
 .button{
@@ -65,4 +80,5 @@ li{
     background: #fff;
     border-radius: 5px;
     padding: 10px;
+    display: inline-block;
 }
